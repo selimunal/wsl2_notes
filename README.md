@@ -20,7 +20,7 @@ Method 2. This way you keep using WSL, but need to apply below fixed and still m
 
 Finally made it work in WS2. I am not really sure how i did it. I have pushed all buttons, somehow it worked I guess 🗡 
 
-1. Control Panel\System and Security\Windows Defender Firewall -> Advanced Setting -> Outbound Rules, Click new Rule, choose program -> Next -> Select the wsl.exe in system.32 -> Select all profiles -> Save it
+1. Control Panel\System and Security\Windows Defender Firewall -> Advanced Setting -> Outbound Rules, Click new Rule, choose program -> Next -> Select the wsl.exe in system.32 -> Select all profiles -> Save it with a fancy name. 
 
 2. WSL settings -> Enable localhost forwarding, and Networking Mode-> VirtioProxy
 3. echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
