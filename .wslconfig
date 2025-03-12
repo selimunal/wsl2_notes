@@ -1,0 +1,11 @@
+[wsl2]
+networkingMode=virtioproxy
+vmSwitch=my-switch
+ipv6=true
+memory=4GB # Limits VM memory in WSL 2 to 4 GB
+swap=4GB
+processors=2 # Makes the WSL 2 VM use two virtual processors
+#localhostforwarding=true
+autoProxy=false
+firewall=true
+dnsProxy=false
