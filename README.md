@@ -33,3 +33,8 @@ sudo chattr +i /etc/resolv.conf  # Make resolv.conf immutable
 generateResolvConf = false
 7.sudo ip route add default via 127.0.0.1 dev loopback0
 8. wsl --shutdown
+
+
+At some point I have done this:
+sudo dhclient -r eth0
+sudo dhclient eth0
