@@ -38,3 +38,7 @@ generateResolvConf = false
 At some point I have done this:
 sudo dhclient -r eth0
 sudo dhclient eth0
+
+
+you can use this command to check your connection speed, if this command works, you are done.
+curl -v https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
