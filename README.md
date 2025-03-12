@@ -22,7 +22,7 @@ Finally made it work in WS2. I am not really sure how i did it. I have pushed al
 
 1. Control Panel\System and Security\Windows Defender Firewall -> Advanced Setting -> Outbound Rules, Click new Rule, choose program -> Next -> Select the wsl.exe in system.32 -> Select all profiles -> Save it with a fancy name. 
 
-2. WSL settings -> Enable localhost forwarding, and Networking Mode-> VirtioProxy
+2. WSL settings -> Enable localhost forwarding, and Networking Mode-> VirtioProxy   (this can be done via .wslconfig file, needs to be in /Users/%Username% folder)
 3. echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
 sudo chattr +i /etc/resolv.conf  # Make resolv.conf immutable
 4. sudo ip route del default via 192.168.1.1 dev eth1
