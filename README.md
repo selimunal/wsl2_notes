@@ -1,5 +1,4 @@
-# wsl2_notes
-ws2 internet connection problem, ws2 apt-get update time out.  
+# WSL2 internet connection problem, ws2 apt-get update time out problem in Windows 11. 
 
 
 In the command prompt:
