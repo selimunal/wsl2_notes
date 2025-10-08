@@ -43,3 +43,6 @@ sudo dhclient eth0
 you can use this command to check your connection speed, if this command works, you are done.
 
 curl -v https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
+
+
+# EDIT: 02/10/2025 WSL2 internet connection problem, ws2 apt-get update time out problem for Windows 11. 
