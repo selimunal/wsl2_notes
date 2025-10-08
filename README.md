@@ -45,4 +45,14 @@ you can use this command to check your connection speed, if this command works, 
 curl -v https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
 
 
-# EDIT: 02/10/2025 WSL2 internet connection problem, ws2 apt-get update time out problem for Windows 11. 
+# EDIT: 02/10/2025 WSL2 internet connection problem, ws2 apt-get update time out problem for Windows 10. 
+
+1. sudo rm /etc/resolv.conf
+echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
+
+2. sudo chattr +i /etc/resolv.conf
+3. notepad $env:USERPROFILE\.wslconfig
+4. generateResolvConf = false  ###add this###
+5. wsl --shutdown
+6. WSL Settings -> Networking -> Networking Mode -> Virtio Proxy
+
